@@ -1,0 +1,10 @@
+header{-webkit-box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    7px 7px 10px 0px rgba(50, 50, 50, 0.4);
+box-shadow:         7px 7px 10px 0px rgba(50, 50, 50, 0.4);}
+header ul{    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 30px;}
+header ul li{float: left;margin-right: 10px;}
+header ul li a{color: #000; text-decoration: none}
+header ul li a:hover{color: #28c9d7; text-decoration: none}
+.modulo{width: 100%; float: left; min-height: 100px; background: red}
