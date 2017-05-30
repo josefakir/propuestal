@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="js/owl/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="js/owl/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -14,44 +15,270 @@
 	<script>
 		$(document).ready(function(e){
 			 $(".owl-carousel").owlCarousel({
-			 	items : 4
+			 	'items' : 4,
+			 	'loop' : true,
+			 	'autoplay' : true,
+			 	'nav' : true,
+			 	'navText' : ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+			 	responsive:{
+			        0:{
+			            items:1,
+			            nav:true
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:3,
+			            nav:true
+			        },
+			        1200:{
+			            items:4,
+			            nav:true,
+			            loop:false
+			        }
+			    }
+			 });
+			 $('#triggermenu').click(function(e){
+			 	e.preventDefault();
+			 	$('header ul#menu').toggle();
 			 });
 		});
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="col-md-12">
-				<a href="" id="logo"></a>
-				<ul>
-					<li><a href="">LIKE A BOSS</a></li>
-					<li><a href="">MAKEUP</a></li>
-					<li><a href="">HAIRCARE</a></li>
-					<li><a href="">SKINCARE</a></li>
-					<li><a href="">WOW</a></li>
-					<li><a href="">AL INFINITO</a></li>
-					<li><a href="">PSST PSST</a></li>
+			<div class="col-md-12 conttrigger">
+				<a href="index.html" id="logo"><img src="img/logo.gif" alt=""></a>
+				<a href="#" id="triggermenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<ul id="menu">
+					<li><a href="historico.html">LIKE A BOSS</a></li>
+					<li><a href="historico.html">MAKEUP</a></li>
+					<li><a href="historico.html">HAIRCARE</a></li>
+					<li><a href="historico.html">SKINCARE</a></li>
+					<li><a href="historico.html">WOW</a></li>
+					<li><a href="historico.html">AL INFINITO</a></li>
+					<li><a href="historico.html">PSST PSST</a></li>
+				</ul>
+				<ul id="social">
+					<li><a href="" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
-	<div class="modulo">
-		<!-- Set up your HTML -->
+	<div class="modulo" id="destacadas">
 		<div class="owl-carousel">
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
-		  <div> Your Content </div>
+			<div class="item">
+				<a href=""><img src="img/1.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/3.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/2.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/4.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/1.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/3.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/2.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
+			<div>
+				<a href=""><img src="img/4.jpg" alt=""></a>
+				<div class="contentdestacada">
+					<h2><a href="single.html">Titulo</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="modulo">notas</div>
-	<div class="modulo">newsletter</div>
-	<div class="modulo">blanco</div>
-	<footer></footer>
-	<a href="">test</a>
+	<div class="modulo" id="notas">
+		<div class="container">
+			<div class="nota">
+				<div class="col-md-3">
+					<a href="single.html"><img src="img/1.jpg" alt=""></a>
+				</div>
+				<div class="col-md-9">
+					<h2><a href="single.html">10 peinados de graduación que puedes hacer tu misma</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style sharers">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="nota">
+				<div class="col-md-3">
+					<a href="single.html"><img src="img/2.jpg" alt=""></a>
+				</div>
+				<div class="col-md-9">
+					<h2><a href="single.html">10 peinados de graduación que puedes hacer tu misma</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style sharers">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="nota">
+				<div class="col-md-3">
+					<a href="single.html"><img src="img/1.jpg" alt=""></a>
+				</div>
+				<div class="col-md-9">
+					<h2><a href="single.html">10 peinados de graduación que puedes hacer tu misma</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style sharers">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="nota">
+				<div class="col-md-3">
+					<a href="single.html"><img src="img/2.jpg" alt=""></a>
+				</div>
+				<div class="col-md-9">
+					<h2><a href="single.html">10 peinados de graduación que puedes hacer tu misma</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style sharers">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="nota">
+				<div class="col-md-3">
+					<a href="single.html"><img src="img/1.jpg" alt=""></a>
+				</div>
+				<div class="col-md-9">
+					<h2><a href="single.html">10 peinados de graduación que puedes hacer tu misma</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style sharers">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="nota">
+				<div class="col-md-3">
+					<a href="single.html"><img src="img/2.jpg" alt=""></a>
+				</div>
+				<div class="col-md-9">
+					<h2><a href="single.html">10 peinados de graduación que puedes hacer tu misma</a></h2>
+					<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style sharers">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="modulo" id="newsletter">
+		<div class="container">
+			<div class="col-md-12">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h3 class="tac ">NEWSLETTER</h3>
+				<p class="tac">Recibe cupones y promociones en tu correo electrónico.</p>
+				<p class="tac"><input type="text" placeholder="Escriba su correo electrónico"></p>
+				<p class="tac"><input type="submit" value="Suscribirme"></p>
+			</div>
+		</div>
+	</div>
+	<div class="modulo" id="localizador">
+		<div class="container">
+			<div class="col-md-12">
+				<h2>Localizador de sucursales</h2>
+			</div>
+			<div class="col-md-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.890868520872!2d-99.18086684845161!3d19.373877486853463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff710a522eb5%3A0xbf1d3f7938d1ce71!2zTCdvcsOpYWwgTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1495647569720" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-6">
+				<h3>Filtra tus resultados:</h3>
+				<p><label for="">Código Postal&nbsp;</label><input type="text"></p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="copyright">Derechos reservados 2017</p>
+	</footer>
 </body>
 </html>

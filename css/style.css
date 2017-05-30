@@ -1,10 +1,92 @@
-header{-webkit-box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.4);
--moz-box-shadow:    7px 7px 10px 0px rgba(50, 50, 50, 0.4);
-box-shadow:         7px 7px 10px 0px rgba(50, 50, 50, 0.4);}
-header ul{    list-style: none;
-    padding-top: 20px;
-    padding-bottom: 30px;}
-header ul li{float: left;margin-right: 10px;}
-header ul li a{color: #000; text-decoration: none}
-header ul li a:hover{color: #28c9d7; text-decoration: none}
-.modulo{width: 100%; float: left; min-height: 100px; background: red}
+header{-webkit-box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.4);-moz-box-shadow:7px 7px 10px 0px rgba(50, 50, 50, 0.4);box-shadow:7px 7px 10px 0px rgba(50, 50, 50, 0.4);    position: fixed;z-index: 2;width: 100%;background: #fff; height: 100px}
+header ul#menu{list-style: none;padding-top: 20px;padding-bottom: 30px;}
+header ul#menu li{float: left;margin-right: 10px;}
+header ul#menu li a{color: #000; text-decoration: none;letter-spacing: 1.3px; font-size: 12px}
+header ul#menu li a:hover{color: #28c9d7; text-decoration: none}
+.modulo{width: 100%; float: left; min-height: 100px;}
+#destacadas{margin-top: 100px}
+#titulo{margin-top: 100px;height: 300px; background: url(../img/p1.jpg) top center; background-attachment: fixed; background-size: cover}
+#titulo h1{text-align: center;    margin-top: 124px; color: #28c9d7;text-shadow: 4px 4px 30px rgba(255, 255, 255, 1);}
+.owl-prev{position: absolute;top: 50%;left: 20px;margin-top: -20px}
+.owl-prev i{font-size: 40px;color: #28c9d7}
+.owl-next{position: absolute;top: 50%;right: 20px;margin-top: -20px}
+.owl-next i{font-size: 40px; color: #28c9d7}
+footer{background: #2b2b2b; color: #fff; height: 50px; width: 100%; float: left;}
+.contentdestacada{position: absolute; width: 100%; padding:1%; bottom: 0; background: url(../img/pixel.png)}
+.contentdestacada h2 a{color: #28c9d7}
+.contentdestacada h2 a:hover{text-decoration: none !important}
+.contentdestacada p{color: #fff}
+#notas{margin-top: 40px; }
+.nota{ padding-bottom: 20px; padding-top: 20px}
+.nota img{width: 100%;-webkit-box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.3);-moz-box-shadow:    7px 7px 15px 0px rgba(50, 50, 50, 0.3);box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);}
+.nota a{color : #28c9d7}
+.sharers{float: right}
+#logo img{width: 100px;display: block;margin-left: 26px;margin-top: 5px;}
+#newsletter{float: left;width: 100%; min-height: 400px; background: url(../img/news.jpg); background-attachment: fixed; background-size: cover;}
+.tac{text-align: center;}
+#newsletter input[type=text]{width: 280px;height: 40px;font-size: 18px;border: none;padding: 0 10px;text-align: center;}
+#newsletter input[type=submit]{background: #000;height: 40px;color: #fff;border: none;}
+.copyright{color: #fff; text-align: center; font-size: 10px; padding-top: 20px}
+#triggermenu{display: none;position: absolute;right: 0;z-index: 2;font-size: 32px;top: 18px; color: #28c9d7}
+.conttrigger{position: relative}
+.facebook{color: #3B5998}
+.twitter{color: #00aced}
+.youtube{color: #e52d27}
+#social{list-style: none; position: absolute; top: 0; right: 0; z-index: 3}
+#social li{float: left; margin-right: 10px; font-size: 18px}
+.notaHistorico{width: 32%; float: left; margin-right: 1%}
+.notaHistorico img{width: 100%; margin-bottom: 20px}
+.notaHistorico img:hover{opacity: 0.8}
+.notaHistorico h2 {text-align: center}
+.notaHistorico h2 a{color: #9b2468}
+.notaHistorico h2 a:hover{text-decoration: none; opacity: 0.8}
+.notaHistorico p {text-align: center}
+
+.notaMasVisto img{width: 100%}
+.notaMasVisto h3 a{color: #28c9d7; height: 30px}
+.notaMasVisto a{ height: 100px; overflow: hidden; display: block }
+
+article{margin-bottom: 30px}
+article img{width: 100% !important}
+article h1{color: #9b2468}
+
+.share{float: right; margin-bottom: 10px}
+article p{line-height: 25px; margin-bottom: 10px}
+
+a:hover{text-decoration:none !important; opacity: 0.8}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        header ul#menu{display: none;position: absolute;width: 160px;background: #fff;right: 0;-webkit-box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.3);-moz-box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);}
+        #triggermenu{display: block}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        header ul#menu{display: none;position: absolute;width: 160px;background: #fff;right: 0;-webkit-box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.3);-moz-box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);}
+        #triggermenu{display: block}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        header ul#menu{display: none;position: absolute;width: 160px;background: #fff;right: 0;-webkit-box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.3);-moz-box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);}
+        #triggermenu{display: block}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        header ul#menu{display: none;position: absolute;width: 160px;background: #fff;right: 0;-webkit-box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.3);-moz-box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);box-shadow:7px 7px 15px 0px rgba(50, 50, 50, 0.3);}
+        #triggermenu{display: block}
+    }
